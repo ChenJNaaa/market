@@ -1,0 +1,46 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/shipping/shipping",
+    "pages/statisitcs/statisitcs",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff9800",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":{
+    "borderStyle": "black",
+    "selectedColor": "#ff9404",
+    "color": "#6a6a6a",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "进货",
+        "iconPath": "images/tabBar/purchase.png",
+        "selectedIconPath": "images/tabBar/purchase-on.png"
+      },
+      {
+        "pagePath": "pages/shipping/shipping",
+        "text": "出货",
+        "iconPath": "images/tabBar/shipping.png",
+        "selectedIconPath": "images/tabBar/shipping-on.png"
+      },
+      {
+        "pagePath": "pages/statisitcs/statisitcs",
+        "text": "统计",
+        "iconPath": "images/tabBar/statistics.png",
+        "selectedIconPath": "images/tabBar/statistics-on.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "images/tabBar/user.png",
+        "selectedIconPath": "images/tabBar/user-on.png"
+      }
+    ]
+  }
+  
+}

@@ -1,0 +1,84 @@
+<!--pages/statisitcs/statisitcs.wxml-->
+<view>
+  <view class='navbar'>
+    <view class='menu {{(menuTabCurrent != "1") && (menuTabCurrent != "2") ? "navbar-on" : "navbar-off"}}' 
+          data-current = "0" catchtap = "menuTab">
+      <image src='../../images/shippingModel/demand.png'></image>
+      <text>进货统计</text>
+    </view>
+    <view class='menu {{menuTabCurrent == "1" ? "navbar-on" : "navbar-off"}}'
+          style='border-left:1rpx solid #cbcbcb;border-right:1rpx solid #cbcbcb;' 
+          data-current='1' catchtap = "menuTab">
+      <image src='../../images/shippingModel/shipping-list.png'></image>
+      <text>出货统计</text>
+    </view>
+    <view class='menu {{menuTabCurrent == "2" ? "navbar-on" : "navbar-off"}}'
+          data-current='2' catchtap = "menuTab">
+      <image src='../../images/shippingModel/shipping-list.png'></image>
+      <text>商品统计</text>
+    </view>
+  </view>
+
+  <view hidden='{{(menuTabCurrent == "1") || (menuTabCurrent == "2") }}'>
+    <view class='list'>
+      <view class='title'>
+        <view class='title1'>
+          <text>编号</text>
+          <text style='margin-left:30rpx'>01564578</text>
+        </view>
+        <view class='title1 date'>日期</view>
+      </view>
+      <view class='seller' style='border-bottom:1rpx solid #cbcbcb'>
+        <text>供应商</text>
+        <text class='seller-name'>阿旺毛织</text>
+      </view>
+      <view class='status'>
+        <view class='total-price'>总价：<text>15651元</text></view>
+        <view class='panding' bindtap=''>未处理</view></view>
+      </view>
+    </view>
+  </view>  
+
+  <view hidden='{{menuTabCurrent != "1"}}'>
+    <view class='list'>
+      <view class='title'>
+        <view class='title1'>
+          <text>编号</text>
+          <text style='margin-left:30rpx'>01564578</text>
+        </view>
+        <view class='title1 date'>日期</view>
+      </view>
+      <view class='seller' style='border-bottom:1rpx solid #cbcbcb'>
+        <text>供应商</text>
+        <text class='seller-name'>阿旺毛织</text>
+      </view>
+      <view class='status'>
+        <view class='total-price'>总价：<text>141元</text></view>
+        <view class='panding' bindtap=''>未处理</view></view>
+      </view>
+   
+  </view>
+
+  <view hidden='{{menuTabCurrent != "2"}}'>
+    <view class='list'>
+      <view class='title'>
+        <view class='title1'>
+          <text>编号</text>
+          <text style='margin-left:30rpx'>01564578</text>
+        </view>
+        <view class='title1 date'>日期</view>
+      </view>
+      <view class='seller' style='border-bottom:1rpx solid #cbcbcb'>
+        <text>供应商</text>
+        <text class='seller-name'>阿旺毛织</text>
+      </view>
+    
+      <view class='status'>
+        <view class='total-price'>总价：<text>16771元</text></view>
+        <view class='panding' bindtap=''>未处理</view></view>
+      
+
+
+
+  </view>
+</view>
