@@ -4,10 +4,51 @@ const app = getApp()
 
 Page({
   data: {
-    motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
+
+    supplierList:[
+      {
+        "name":"供应商1供应商1供应商1供应商1供应商1供应商1供应商1供应商1",
+        "address":"地址1"
+      },
+      {
+        "name": "供应商2",
+        "address": "地址2"
+      },
+      {
+        "name": "供应商3",
+        "address": "地址3"
+      },
+      {
+        "name": "供应商4",
+        "address": "地址4"
+      }
+    ],
+    purOrders:[
+      {
+        "idCode":"0123154",
+        "date":"2018-04-12",
+        "seller":"供应商A",
+        "status":"0"
+      },
+      {
+        "idCode": "0123134",
+        "date": "2018-04-13",
+        "seller": "供应商A",
+        "status": "1"
+      },
+      {
+        "idCode": "0123254",
+        "date": "2018-04-14",
+        "seller": "供应商A",
+        "status": "0"
+      }
+    ]
+
+
   },
   //事件处理函数
   bindViewTap: function() {

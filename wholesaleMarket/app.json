@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/shipping/shipping",
     "pages/statisitcs/statisitcs",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/index/demand/demand",
+    "pages/orderdetails/orderdetails",
+    "pages/user/info/info"
   ],
   "window":{
     "backgroundTextStyle": "light",

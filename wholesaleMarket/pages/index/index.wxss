@@ -21,4 +21,28 @@
   margin-top: 200px;
 }
 */
-
+.supplier{
+  margin-bottom: 20rpx;
+  height: 84rpx; 
+  line-height: 84rpx;
+  background-color: #ffffff;
+  padding: 30rpx 50rpx;
+}
+.supplier-name{
+  color:#434343;
+  font-size: 34rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.supplier-address{
+  height: 32rpx;
+  line-height: 32rpx;
+  color:#7b7b7b;
+  font-size: 32rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

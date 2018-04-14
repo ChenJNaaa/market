@@ -1,0 +1,4 @@
+/* pages/orderdetails/orderdetails.wxss */
+.order-details{
+  margin-top: 20rpx;
+}

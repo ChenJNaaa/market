@@ -1,1 +1,63 @@
 /* pages/statisitcs/statisitcs.wxss */
+
+.searchBox{
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  background:rgba(0,0,0,0.4);
+  overflow: hidden;
+}
+.searchForm{
+  display: flex;
+  /* width: 570rpx;   */
+  /* height:700rpx;  */
+  background-color: #ffffff;
+  position:relative; 
+     top:300rpx;   
+  padding: 62rpx 112rpx 32rpx 62rpx;
+  /* box-shadow: 0rpx 0rpx 10rpx 10rpx #cccccc; */
+}
+.searchForm text{
+  font-size: 32rpx;
+  color:#686868;
+}
+.business{
+  display: flex; 
+  height: 72rpx;
+  line-height: 72rpx;
+  margin-bottom: 32rpx;
+}
+.search-input{
+  width:470rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border: 1rpx solid #969696;
+  border-radius: 10rpx;
+  color: #686868;
+  font-size: 30rpx;
+  display: inline-flex;
+  margin-left: 12rpx;
+  padding-left: 24rpx;
+}
+.date-input{
+  width:226rpx;
+  height:56rpx; 
+  border-radius: 0;
+  vertical-align:middle;
+  padding-left: 14rpx;
+}
+.search-button{
+  margin-top: 8rpx;
+  /* margin: 8rpx auto; */
+  width:96rpx;
+  height:56rpx;
+  line-height: 56rpx;
+  text-align: center;
+  border:none;
+  color: #ffffff;
+  font-size: 30rpx;
+  background-color: #ed9a10;
+  padding: 0;
+  border-radius: 6rpx;
+}

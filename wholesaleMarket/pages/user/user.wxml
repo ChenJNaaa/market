@@ -1,2 +1,47 @@
 <!--pages/user/user.wxml-->
-<text>pages/user/user.wxml</text>
+
+<view class='user'>
+  <view class='user-info-title'>
+    <image src='../../images/userModel/signature.png'></image>
+    <text>小明{{userName}}</text>
+  </view>
+  <view class='user-info-list'> 
+    <navigator url='/pages/user/info/info'>
+      <view class='user-info'>
+        <image src='../../images/userModel/shop.png'></image>
+        <text>我的资料</text>
+        <view class='arrow' style='margin-top:44rpx'></view>
+      </view>
+    </navigator>
+<!--
+    <view class='user-info'>
+      <image src='../../images/userModel/location.png'></image>
+      <text>所在地</text>
+      <view class='arrow' style='margin-top:44rpx'></view>
+    </view>
+    <view class='user-info'>
+      <image src='../../images/userModel/contact.png'></image>
+      <text>联系方式</text>
+      <view class='arrow' style='margin-top:44rpx'></view>
+    </view>
+-->
+    <view class='user-info'>
+      <image src='../../images/userModel/client.png'></image>
+      <text>客户管理</text>
+      <view class='arrow' style='margin-top:44rpx'></view>
+    </view>
+    <view class='user-info'>
+      <image src='../../images/userModel/commodity.png'></image>
+      <text>商品管理</text>
+      <view class='arrow' style='margin-top:44rpx'style='margin-top:44rpx'></view>
+    </view>
+    <view class='user-info'>
+      <image src='../../images/userModel/signature.png'></image>
+      <text>我的签名</text>
+      <view class='arrow' style='margin-top:44rpx'></view>
+    </view>
+  </view>
+
+
+
+</view>

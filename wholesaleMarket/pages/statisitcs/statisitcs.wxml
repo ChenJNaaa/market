@@ -28,14 +28,43 @@
         </view>
         <view class='title1 date'>日期</view>
       </view>
-      <view class='seller' style='border-bottom:1rpx solid #cbcbcb'>
+      <view class='seller' style='border-bottom:1rpx solid #cbcbcb;padding-bottom:10rpx;margin-bottom:10rpx'>
         <text>供应商</text>
         <text class='seller-name'>阿旺毛织</text>
       </view>
-      <view class='status'>
+      <view class='row2'>
         <view class='total-price'>总价：<text>15651元</text></view>
-        <view class='panding' bindtap=''>未处理</view></view>
+        <view class='status panding' bindtap=''>未处理</view>
       </view>
+    </view>
+
+    <view class='searchBox' hidden='{{flag1}}'>
+      <form class='searchForm'>
+        <view class='business'>
+          <text>编号</text>
+          <input class='search-input' placeholder='默认全部1111' placeholder-class='placeholder'></input>
+        </view>
+        <view class='business'>
+          <text>商家</text>
+          <input class='search-input' placeholder='默认全部1111' placeholder-class='placeholder'></input>
+        </view>
+        <view class='business' style='height:56rpx;line-height:56rpx'>
+          <text>日期</text>
+          <picker mode='date' value='{{startDate}}' bindchange="changeStartDate">
+            <input class='search-input date-input' placeholder='{{date}}' value='{{startDate}}' placeholder-class='placeholder'>
+            </input>
+          </picker>
+          <picker mode='date' value='{{endDate}}' bindchange="changeEndDate">
+            <input class='search-input date-input' placeholder='{{date}}' value='{{endDate}}' placeholder-class='placeholder'>
+            </input>
+          </picker>
+        </view>
+        <view class='business'>
+          <text>规格</text>
+          <input class='search-input' placeholder='默认全部' placeholder-class='placeholder'></input>
+        </view>
+        <button class='search-button' form-type='submit' bindtap='search'>搜索</button>
+      </form>
     </view>
   </view>  
 
@@ -48,15 +77,45 @@
         </view>
         <view class='title1 date'>日期</view>
       </view>
-      <view class='seller' style='border-bottom:1rpx solid #cbcbcb'>
+      <view class='seller' style='border-bottom:1rpx solid #cbcbcb;padding-bottom:10rpx;margin-bottom:10rpx'>
         <text>供应商</text>
         <text class='seller-name'>阿旺毛织</text>
       </view>
-      <view class='status'>
+      <view class='row2'>
         <view class='total-price'>总价：<text>141元</text></view>
-        <view class='panding' bindtap=''>未处理</view></view>
+        <view class='status panding' bindtap=''>未处理</view>
       </view>
-   
+    </view>
+
+   <view class='searchBox' hidden='{{flag2}}'>
+      <form class='searchForm'>
+        <view class='business'>
+          <text>编号</text>
+          <input class='search-input' placeholder='默认全部1111' placeholder-class='placeholder'></input>
+        </view>
+        <view class='business'>
+          <text>商家</text>
+          <input class='search-input' placeholder='默认全部' placeholder-class='placeholder'></input>
+        </view>
+        <view class='business' style='height:56rpx;line-height:56rpx'>
+          <text>日期</text>
+          <picker mode='date' value='{{startDate}}' bindchange="changeStartDate">
+            <input class='search-input date-input' placeholder='{{date}}' value='{{startDate}}' placeholder-class='placeholder'>
+            </input>
+          </picker>
+          <picker mode='date' value='{{endDate}}' bindchange="changeEndDate">
+            <input class='search-input date-input' placeholder='{{date}}' value='{{endDate}}' placeholder-class='placeholder'>
+            </input>
+          </picker>
+        </view>
+        <view class='business'>
+          <text>规格</text>
+          <input class='search-input' placeholder='默认全部' placeholder-class='placeholder'></input>
+        </view>
+        <button class='search-button' form-type='submit' bindtap='search'>搜索</button>
+      </form>
+    </view>
+
   </view>
 
   <view hidden='{{menuTabCurrent != "2"}}'>
@@ -68,17 +127,48 @@
         </view>
         <view class='title1 date'>日期</view>
       </view>
-      <view class='seller' style='border-bottom:1rpx solid #cbcbcb'>
+      <view class='seller' style='border-bottom:1rpx solid #cbcbcb;padding-bottom:10rpx;margin-bottom:10rpx'>
         <text>供应商</text>
         <text class='seller-name'>阿旺毛织</text>
       </view>
-    
-      <view class='status'>
+      <view class='row2'>
         <view class='total-price'>总价：<text>16771元</text></view>
-        <view class='panding' bindtap=''>未处理</view></view>
-      
+        <view class='status panding' bindtap=''>未处理</view>
+      </view>
+    </view> 
 
-
-
+    <view class='searchBox' hidden='{{flag3}}'>
+      <form class='searchForm'>
+        <view class='business'>
+          <text>编号</text>
+          <input class='search-input' placeholder='默认全部1111' placeholder-class='placeholder'></input>
+        </view>
+        <view class='business'>
+          <text>商家</text>
+          <input class='search-input' placeholder='默认全部333' placeholder-class='placeholder'></input>
+        </view>
+        <view class='business' style='height:56rpx;line-height:56rpx'>
+          <text>日期</text>
+          <picker mode='date' value='{{startDate}}' bindchange="changeStartDate">
+            <input class='search-input date-input' placeholder='{{date}}' value='{{startDate}}' placeholder-class='placeholder'>
+            </input>
+          </picker>
+          <picker mode='date' value='{{endDate}}' bindchange="changeEndDate">
+            <input class='search-input date-input' placeholder='{{date}}' value='{{endDate}}' placeholder-class='placeholder'>
+            </input>
+          </picker>
+        </view>
+        <view class='business'>
+          <text>规格</text>
+          <input class='search-input' placeholder='默认全部' placeholder-class='placeholder'></input>
+        </view>
+        <button class='search-button' form-type='submit' bindtap='search'>搜索</button>
+      </form>
+    </view>
   </view>
 </view>
+  
+
+
+
+
